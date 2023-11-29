@@ -11,7 +11,7 @@ private:
     vector<pair<int, int_pair>> G; // graph
     vector<pair<int, int_pair>> T; // mst
     int* parent;
-    int V; // number of vertices/nodes in graph
+    int V=0; // number of vertices/nodes in graph
 public:
 
     /*Graph(int V);
@@ -61,18 +61,19 @@ public:
         }
     }
 
-    void print_graphs() {
+    /*void print_graphs() {
         cout << "\n\ngraph_struct:\n";
         for (int i = 0; i < T.size(); i++) {
             cout << "\t" << i;
         }
         for (int i = 0; i < T.size(); i++) {
+            cout << i;
             pair<int, int_pair> kl = G[i];
             for (int j = 0; j < T.size(); j++) {
-                
+                if (kl.second.first == )
             }
         }
-    }
+    }*/
 
     void print() {
         cout << "Path :" << " Weight" << endl;
